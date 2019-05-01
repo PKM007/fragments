@@ -12,6 +12,7 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ef2424"
         android:onClick="ChangeFragment"
         android:text="Fragment1" />
 
@@ -19,6 +20,7 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#30a6dc"
         android:onClick="ChangeFragment"
         android:text="Fragment2" />
     

@@ -16,22 +16,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ChangeFragment(View view){
-        Fragment fragment;
+        Fragment fragment1,fragment2;
 
         if(view == findViewById(R.id.button))
         {
-            fragment=new FragmentOne();
+            fragment1=new FragmentOne();
             FragmentManager fm=getFragmentManager();
             FragmentTransaction ft=fm.beginTransaction();
-            ft.replace(R.id.fragment_place,fragment);
+            ft.replace(R.id.fragment_place,fragment1);
             ft.commit();
         }
         if(view == findViewById(R.id.button2))
         {
-            fragment=new FragmentTwo();
+            fragment2=new FragmentTwo();
             FragmentManager fm=getFragmentManager();
             FragmentTransaction ft=fm.beginTransaction();
-            ft.replace(R.id.fragment_place,fragment);
+            ft.replace(R.id.fragment_place,fragment2);
             ft.commit();
         }
     }
